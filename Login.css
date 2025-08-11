@@ -1,77 +1,160 @@
-*{
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #202124;
+    color: #e8eaed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    }
-body{
-        background-image: url(picture.jpg) ;
-        background-size: cover;        
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
-        
 }
-.container{ 
-        color: white;
-        position: absolute;
-        top: 25%;
-        left: 40%;
-        width: 40ch;
-        
-        
-        backdrop-filter: blur(10px) saturate(185%);
-    -webkit-backdrop-filter: blur(10px) saturate(185%);
-    background-color: rgba(17, 25, 40, 0.69);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
 
-    }
-.container h1{
-    font-family: 'Heebo', sans-serif;
-    width: 60%;
-    display: inline-block;
-    font-size: 40px;
-    margin-bottom: 15px;
-    padding: 13px ;
-    }
-.box{
-    width: 70%;
+.container {
+    background-color: #202124;
+    padding: 48px 40px 36px;
+    border: 1px solid #5f6368;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 8px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #e8eaed;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-container label {
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    font-size: 16px;
+    color: #969ba1;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.input-container input:focus + label,
+.input-container input:valid + label {
+    top: -10px;
+    left: 12px;
+    font-size: 12px;
+    color: #8ab4f8;
+    background-color: #202124;
+    padding: 0 4px;
+}
+
+.input-container input:focus {
+    outline: none;
+    border-color: #8ab4f8;
+    border-width: 2px;
+    padding: 12px 14px;
+}
+
+.link {
+    color: #8ab4f8;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.info-text {
+    font-size: 14px;
+    color: #969ba1;
+    text-align: left;
+    margin-bottom: 48px;
+}
+
+.info-text a {
+    color: #8ab4f8;
+    text-decoration: none;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create-account {
+    text-align: left;
+}
+
+.btn {
+    background-color: #8ab4f8;
+    color: #202124;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #a1c5fb;
+}
+
+.user-info {
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin: 22px 0px;
-    border-bottom: 2px solid rgb(17, 16, 17);
-    box-shadow: 8px 6px 4px rgb(0, 0, 0)
-    }
-.box input{  
-    background: none;
-    width: 75%;
-    padding: 5px 10px;
-    font-size: 15px;
-    border: none;
-    outline: none;
-    color: white;
-    }
-.btn{
-        color: white;
-        cursor: pointer;
-        outline: none; 
-        margin: 12px 0;
-        padding: 10px 21px;
-        border: 2px solid rgb(3, 3, 3);
-        border-radius: 10px;
-        font-size: 18px;
-        background: none;
-        font-weight: bold;
-        
-    }
-.box i{ 
-        width: 25px; 
-        text-align: center;
-    }    
-.btn:hover{
-        opacity: 0.5;
-        color: rgb(11, 10, 11); 
-        background-color:white ; 
-        
-    }
+    margin-bottom: 24px;
+    border: 1px solid #5f6368;
+    border-radius: 100px;
+    padding: 6px 12px;
+    font-size: 14px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-info svg {
+    margin-right: 8px;
+}
+
+.show-password {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 48px;
+}
+
+.show-password label {
+    font-size: 14px;
+    color: #e8eaed;
+    margin-left: 8px;
+}
     
     
